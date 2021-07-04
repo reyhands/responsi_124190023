@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".FragmentHome"
+    >
+
+
+    <TextView
+        android:id="@+id/search_TEXT"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shadow"
+        android:fontFamily="sans-serif-thin"
+
+        android:gravity="center"
+        android:text="Rumah Sakit Rujukan :"
+
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_marginBottom="10dp">
+
+    </TextView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRumahSakit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/primary"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/rs_row"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
